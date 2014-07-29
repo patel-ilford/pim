@@ -26,8 +26,8 @@ public class Application {
 		MongoOperations repository = (MongoOperations) ctx.getBean("mongoTemplate");
 	
 		
-		repository.save(new Product("ABC", 10.00));
-		repository.save(new Product("DEF", 9.99));
+		repository.save(new Product("Vihanf", 10.00));
+		repository.save(new Product("Shailesh", 9.99));
 
 		Product response = new Product();
 		List<Product> productlist = repository.findAll(Product.class);
